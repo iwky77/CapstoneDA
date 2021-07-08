@@ -21,8 +21,10 @@ tr = table.find_all('tr')
 td = table.find_all('td')
 a = table.find_all('a')
 
-temp = [] #initiating a tuple
-        
+#row_length = len(___)
+
+temp = [] #initiating a list 
+
 for i in range(0, len(tr)):
     
     row = table.find_all('tr')[i]
@@ -44,7 +46,7 @@ for i in range(0, len(tr)):
         note = row.find_all('td')[3].text
         note = note.strip() #to remove excess white space
  
-    temp.append((date,day,idr,note))  
+    temp.append((date,day,idr,note)) 
 
 temp = temp[::-1]
 
